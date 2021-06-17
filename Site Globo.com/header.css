@@ -1,0 +1,221 @@
+.header{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid var(--sty-8);
+    z-index: 900;
+}
+
+.header .container,
+.header .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .hamburguer {
+    display: block;
+    background: none;
+    border: 0;
+    outline: none;
+}
+
+.header .hamburguer .span{
+    margin: 4px 0;
+}
+
+.header .hamburguer:before,
+.header .hamburguer:after {
+    content: "";
+}
+
+.header .hamburguer .span,
+.header .hamburguer:before,
+.header .hamburguer:after {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--sty-6);
+}
+
+.header .logo {
+    display: block;
+    margin: 0 40px 0 20px;
+}
+
+.header .logo img {
+    width: 100%;
+    max-width: 120px;
+}
+
+.header .nav-menu {
+    display: block;
+}
+
+.header .nav-menu .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav-menu .menu li {
+    float: left;
+}
+
+.header .nav-menu .menu li a {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.header .nav-menu .menu li:first-child a{
+    margin-left: 0;
+}
+
+.header .nav-menu .menu li a:hover {
+    text-decoration: none;
+   opacity: .8;
+}
+
+.header .nav-menu .menu li .sty-1:hover {
+    color: var(--sty-1)
+}
+
+.header .nav-menu .menu li .sty-2:hover {
+    color: var(--sty-2)
+}
+
+.header .nav-menu .menu li .sty-3:hover {
+    color: var(--sty-3)
+}
+
+.header .nav-menu .menu li .sty-4:hover {
+    color: var(--sty-4)
+}
+
+.header .nav-menu .menu li .sty-5:hover {
+    color: var(--sty-5)
+}
+
+.header .list-header{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .list-header li {
+    position: relative;
+    float: left;
+}
+
+.header .list-header li button {
+    background: none;
+    border 0;  
+    color: var (--color-8);
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+.header .list-header li button .bi{
+    margin-left: 10px;
+    font-size: var (--text-md);
+}
+
+.header .list-header li button .box-mail{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 160px;
+    background-color: var (--color-1);
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,.2);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .list-header li:hover button .box-mail{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 160px;
+    background-color: var(--color-1);
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.header .list-header li:hover .box-globo-products{
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+}
+
+.header .list-header li .box-mail:before{
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid var(--color-1);
+}
+
+.header .list-header li .box-globo-products{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    background-color: var(--color-1);
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,.2);
+    border-top: 2px solid var(--sty-6);
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .list-header li .box-globo-products img {
+    width: 100%;
+}
+
+.header .list-header li .box-globo-products h4 {
+   display: block;
+   font-weight: 700;
+   text-align: center;
+   margin-bottom: 20px;
+   color: var(--sty-6);
+   font-size: var(--text-md);
+   text-transform: uppercase;
+}
+
+.header .list-header li .box-globo-products .btn {
+    margin: 20px auto 0;
+}
+
+.header .list-header li .box-mail a{
+    display: block;
+    color: var(--sty-5);
+    font-weight: 700;
+    font-size: var(--text-md);
+    padding: 10px;
+    transition: var (--transition);
+}
+
+.header .list-header li button .box-mail a:hover{
+    background-color: var(--sty-8);
+    color var(--sty-7);
+    text-decoration: none;
+}
+
+
+

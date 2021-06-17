@@ -1,0 +1,56 @@
+:root {
+    --color-1: #fff;
+    --color-2: #141414;
+
+    --sty-1: #f03018;
+    --sty-2: #06aa48;
+    --sty-3: #ec7d00;
+    --sty-4: #fb0234;
+    --sty-5: #333333;
+    --sty-6: #0669de;
+    --sty-7: #777777;
+
+    --font: 'Open Sans', sans-serif; 
+
+
+    --text: 14px;
+    --text-md: 16px;
+    --tit-lg: 56px;
+    --tit-md: 24px;
+    --tit-sm: 18px;
+
+    --font-xl: 36px;
+
+    --transition: ease-in-out .4s;
+}
+
+body {
+    font-family: var(-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-2);
+}
+
+.sty-1{ color: var(--sty-1); }
+.sty-2{ color: var(--sty-2); }
+.sty-3{ color: var(--sty-3); }
+.sty-4{ color: var(--sty-4); }
+.sty-5{ color: var(--sty-5); }
+
+.btn{
+    display: block;
+    width: 100%;
+    max-width: max-content;
+    background-color: var(--sty-6);
+    color: var(--color-1);
+    border-radius: 4px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    transition: var(--transition);
+    font-size: var(--text);
+}
+
+.btn:hover{
+    color: var(--color-1);
+    opacity: .7;
+}

@@ -1,18 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 
 #titulo {
     font-family: sans-serif;
+    font-size: 50px;
     color: #380B61;
     margin-left: 7%;
 }
 
 #subtitulo {
     font-family: sans-serif;
+    font-size: 20px;
     color: #380B61;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 fieldset {
@@ -20,17 +23,17 @@ fieldset {
 }
 
 body {
-    background-color: #f0f8ff;
+    background-color: #98cfff;
     font-family: sans-serif;
-    font-size: 1em;
-    color: #59429d;
+    font-size: 18px;
+    color: #553d9e;
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
 }
 
 input, select, textarea, button {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .campo {
@@ -45,13 +48,15 @@ input, select, textarea, button {
 
 fieldset .grupo .campo {
     float: left;
-    margin-right: 1em;
+    margin-right: 2em;
+    
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
-    border: 1px solid #59429d;
-    box-shadow: 3px 3px 3px rgb(154, 122, 122,0.2);
+    width: 22%;
+    border: 2px solid #59429d;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     display: block;
 }
 
@@ -60,7 +65,7 @@ fieldset .grupo .campo {
 }
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
-    background-color: #e0e0f8;
+    background-color: #f5f391;
 }
 
 .botao {
@@ -70,8 +75,8 @@ fieldset .grupo .campo {
     margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px black;
-    text-shadow: 1px 1px 1px black;
+    box-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px black;
     position: absolute;
     top: 90%;
     left: 50%;
@@ -80,11 +85,12 @@ fieldset .grupo .campo {
 }
 
 .botao:hover {
-    background: #ccbbff;
+    font-weight: bolder;
+    background: #ceca01;
     box-shadow: inset 2px 2px 2px black;
     text-shadow: none;
 }
 
 #check {
-    display: inline-block;
+    display: block;
 }
