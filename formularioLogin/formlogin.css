@@ -76,7 +76,7 @@ form .input-field:first-child {
     left: 0;
     background: linear-gradient(45deg, #8e2de2, #4a00e0);
     transform: scaleX(0);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-n-out;
     transform-origin: left;
 }
 
